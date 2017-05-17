@@ -1,0 +1,779 @@
+@keyframes myfirst {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 3px;
+    top: 1px;
+  }
+  50% {
+    right: 3px;
+    top: 0px;
+  }
+  75% {
+    left: 3px;
+    top: -1px;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+@-webkit-keyframes myfirst {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 3px;
+    top: 1px;
+  }
+  50% {
+    right: 3px;
+    top: 0px;
+  }
+  75% {
+    left: 3px;
+    top: -1px;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+@keyframes mysecound {
+  0% {
+    transform: rotate(17deg);
+  }
+  25% {
+    transform: rotate(16deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(16deg);
+  }
+  100% {
+    transform: rotate(17deg);
+  }
+}
+@-webkit-keyframes mysecound {
+  0% {
+    transform: rotate(17deg);
+  }
+  25% {
+    transform: rotate(16deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(16deg);
+  }
+  100% {
+    transform: rotate(17deg);
+  }
+}
+@keyframes mythird {
+  0% {
+    transform: rotate(-17deg);
+  }
+  25% {
+    transform: rotate(-19deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-19deg);
+  }
+  100% {
+    transform: rotate(-17deg);
+  }
+}
+@-webkit-keyframes mythird {
+  0% {
+    transform: rotate(-17deg);
+  }
+  25% {
+    transform: rotate(-19deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-19deg);
+  }
+  100% {
+    transform: rotate(-17deg);
+  }
+}
+@keyframes changeimg {
+  0% {
+    background-image: url(../images/IMG_1399.JPG);
+  }
+  25% {
+    background-image: url(../images/IMG_1410.JPG);
+  }
+  50% {
+    background-image: url(../images/IMG_1408.JPG);
+  }
+  75% {
+    background-image: url(../images/IMG_1409.JPG);
+  }
+  100% {
+    background-image: url(../images/IMG_1357.JPG);
+  }
+}
+@-webkit-keyframes changeimg {
+  0% {
+    background-image: url(../images/IMG_1399.JPG);
+  }
+  25% {
+    background-image: url(../images/IMG_1410.JPG);
+  }
+  50% {
+    background-image: url(../images/IMG_1408.JPG);
+  }
+  75% {
+    background-image: url(../images/IMG_1409.JPG);
+  }
+  100% {
+    background-image: url(../images/IMG_1357.JPG);
+  }
+}
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.col3 {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+
+.col6 {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+  list-style: none;
+  /* background-color:#ccc;*/
+}
+
+body {
+  min-width: 1400px;
+}
+
+#page1 {
+  width: 100%;
+  height: 804px;
+  background: url(../images/dot.svg), linear-gradient(140deg, rgba(24, 46, 74, 0.85), rgba(70, 174, 195, 0.65)), url(../images/page1.jpg);
+  background-size: 3px,auto,cover;
+  position: relative;
+}
+
+#nav {
+  letter-spacing: 2px;
+  padding: 40px;
+  color: #fff;
+  opacity: 1;
+}
+
+#nav span {
+  background: url("../images/pic1.png") no-repeat;
+  background-size: 40px 38px;
+  margin-left: 16px;
+  padding-left: 50px;
+  padding-top: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#nav span:hover {
+  color: #C4CBC3;
+}
+
+#nav ul {
+  list-style: none;
+  float: right;
+}
+#nav ul li, #nav ul li > a {
+  margin-right: 20px;
+  float: left;
+  cursor: pointer;
+}
+#nav ul li:hover, #nav ul li > a:hover {
+  color: #AAAFA8;
+}
+
+.title {
+  width: 700px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -350px;
+  text-align: center;
+  color: #fff;
+}
+.title h1 {
+  font-size: 50px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  position: relative;
+  animation: myfirst 0.2;
+  animation-iteration-count: infinite;
+  -webkit-animation: myfirst 0.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+.title p {
+  letter-spacing: 2px;
+}
+.title button {
+  outline-width: 0px;
+  border: none;
+  width: 226px;
+  height: 60px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 50px;
+  background: #50BD0D;
+  border-radius: 5px;
+  letter-spacing: 2.5px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 2px 1px 2px 1px #20616d;
+}
+.title button:hover {
+  background-color: #59D60E;
+}
+
+.arrow {
+  width: 50px;
+  height: 30px;
+  background: url(../images/arrow1.svg) no-repeat center;
+  background-size: 40px 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -25px;
+  cursor: pointer;
+  transition: all,1s;
+}
+
+#page2 {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+#page2 #pic {
+  float: left;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#page2 #text {
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding: 60px;
+  line-height: 26px;
+  border-left: 1px solid #ccc;
+  color: #7D827E;
+  overflow: hidden;
+}
+#page2 #text h2, #page2 #text p {
+  font-size: 15px;
+  letter-spacing: .8px;
+  display: block;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+#page2 #text h2 {
+  color: #000;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.page3, .page4, .page5 {
+  width: 100%;
+  background: url(../images/dot.svg), radial-gradient(circle farthest-corner at 100% 100%, #46b8cd, #276073 50%, #182e4a);
+  background-size: 3px,auto;
+  color: #fff;
+  padding-top: 50px;
+}
+.page3 .fronttitle, .page4 .fronttitle, .page5 .fronttitle {
+  position: relative;
+  height: 280px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 60px;
+  border-bottom: #9A9A9C 1px solid;
+}
+.page3 .fronttitle .frontend, .page4 .fronttitle .frontend, .page5 .fronttitle .frontend {
+  width: 600px;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -300px;
+  text-align: center;
+  font-weight: lighter;
+}
+.page3 .fronttitle .frontend h1, .page4 .fronttitle .frontend h1, .page5 .fronttitle .frontend h1 {
+  font-size: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 14px;
+}
+.page3 .fronttitle .frontend p, .page4 .fronttitle .frontend p, .page5 .fronttitle .frontend p {
+  letter-spacing: 2px;
+}
+.page3 .container, .page4 .container, .page5 .container {
+  height: 920px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+.page3 .container .line1, .page4 .container .line1, .page5 .container .line1 {
+  height: 100%;
+  padding: 50px 60px;
+}
+.page3 .container .line1 .row, .page4 .container .line1 .row, .page5 .container .line1 .row {
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.page3 .container .line1 > h4, .page4 .container .line1 > h4, .page5 .container .line1 > h4 {
+  padding-top: 80px;
+}
+.page3 .container .line3, .page4 .container .line3, .page5 .container .line3 {
+  height: 100%;
+  padding: 50px 60px;
+}
+.page3 .container .line3 .row, .page4 .container .line3 .row, .page5 .container .line3 .row {
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.page3 .container .line2, .page4 .container .line2, .page5 .container .line2 {
+  height: 100%;
+  position: relative;
+}
+.page3 .container .line2 img, .page4 .container .line2 img, .page5 .container .line2 img {
+  z-index: 100;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.page3 .container button, .page4 .container button, .page5 .container button {
+  outline-width: 0px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #50BD0D;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: normal;
+  box-shadow: 2px 1px 2px 1px #275d69;
+}
+.page3 .container button:hover, .page4 .container button:hover, .page5 .container button:hover {
+  background-color: #59D60E;
+}
+
+.page4 {
+  background: #fff;
+  color: #142A66;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+.page4 h1, .page4 h4 {
+  color: #000;
+}
+.page4 .container .line1 button {
+  color: #fff;
+  box-shadow: 2px 1px 2px 1px #ccc;
+}
+
+.page5 {
+  background: #F3F7F9;
+  position: relative;
+  overflow: hidden;
+  z-index: 1002;
+  color: #000;
+}
+.page5 .fronttitle {
+  border-bottom: #ccc 1px solid;
+}
+.page5 .container {
+  padding: 0;
+  height: 2000px;
+}
+.page5 .container .left {
+  height: 100%;
+  padding: 0;
+}
+.page5 .container .left .card {
+  margin-right: 0px;
+  margin-top: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-left: 0;
+  padding: 20px;
+}
+.page5 .container .left .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 20px;
+}
+.page5 .container .left .card h3, .page5 .container .left .card h4, .page5 .container .left .card h6 {
+  margin-bottom: 0;
+}
+.page5 .container .left .card p {
+  font-size: 15px;
+  clear: both;
+  line-height: 24px;
+  padding: 15px;
+}
+.page5 .container .left .eraser {
+  height: 100px;
+  transform: rotate(-10deg);
+  margin-left: 50px;
+  margin-top: 450px;
+}
+.page5 .container .left .eraser:hover {
+  position: relative;
+  animation: myfirst 0.2;
+  animation-iteration-count: infinite;
+  -webkit-animation: myfirst 0.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+.page5 .container .left .clip1 {
+  height: 35px;
+  transform: rotate(-15deg);
+  margin-left: -20px;
+  margin-top: 150px;
+}
+.page5 .container .left .clip1:hover {
+  animation: mythird 0.2;
+  animation-iteration-count: infinite;
+  -webkit-animation: mythird 0.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+.page5 .container .left .clip2 {
+  height: 35px;
+  transform: rotate(18deg);
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.page5 .container .left .clip2:hover {
+  animation: mysecound 0.2;
+  animation-iteration-count: infinite;
+  -webkit-animation: mysecound 0.2s;
+  -webkit-animation-iteration-count: infinite;
+}
+.page5 .container .left .cardresume {
+  width: 60%;
+  margin: 100px auto;
+}
+.page5 .container .left .cardresume .cardresume1 {
+  width: 100%;
+}
+.page5 .container .middle {
+  height: 100%;
+  position: relative;
+  z-index: 1800;
+}
+.page5 .container .middle .resu {
+  position: relative;
+  z-index: 1800;
+}
+.page5 .container .middle img {
+  display: block;
+  width: 90%;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
+.page5 .container .middle .env {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  margin: 0 auto 20px;
+}
+.page5 .container .middle .env img {
+  width: 95%;
+}
+.page5 .container .middle .env .dow {
+  width: 320px;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -160px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+  position: absolute;
+  bottom: 400px;
+  z-index: 3000;
+}
+.page5 .container .middle .env .dow h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.page5 .container .middle .env .dow button {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -100px;
+  text-align: center;
+  margin-top: -18px;
+  color: white;
+}
+.page5 .container .middle .env-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 758px;
+}
+.page5 .container .middle .env-bottom img {
+  width: 95%;
+}
+.page5 .container .right {
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+.page5 .container .right .card {
+  margin-right: 0px;
+  margin-top: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-right: 0;
+  padding: 20px;
+  position: absolute;
+  bottom: 140px;
+}
+.page5 .container .right .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 20px;
+}
+.page5 .container .right .card h3, .page5 .container .right .card h4, .page5 .container .right .card h6 {
+  margin-bottom: 0;
+}
+.page5 .container .right .card p {
+  font-size: 15px;
+  clear: both;
+  line-height: 24px;
+  padding: 15px;
+}
+.page5 .container .right .book {
+  height: 55%;
+  padding-left: 30px;
+  padding-top: 300px;
+  transform: rotate(-10deg);
+}
+
+.page6 {
+  z-index: 2001;
+  position: relative;
+  background-color: #fff;
+}
+.page6 .one {
+  height: 300px;
+  overflow: hidden;
+}
+.page6 .one .one1, .page6 .one .one2, .page6 .one .one3 {
+  width: 33.33%;
+  display: block;
+  height: 100%;
+  background: url(../images/picpic1.jpg) center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.page6 .one .one1 .ho, .page6 .one .one2 .ho, .page6 .one .one3 .ho {
+  width: 100%;
+  height: 120%;
+  margin: 0 auto;
+  background-image: url(../images/dot.svg), linear-gradient(-40deg, #46b8cd, #276073 50%, #182e4a);
+  background-size: 3px,auto;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+}
+.page6 .one .one1 .ho p, .page6 .one .one2 .ho p, .page6 .one .one3 .ho p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+}
+.page6 .one .one1 .ho:hover, .page6 .one .one2 .ho:hover, .page6 .one .one3 .ho:hover {
+  top: -10px;
+  opacity: 0.8;
+}
+.page6 .one .one1 .ho:hover p, .page6 .one .one2 .ho:hover p, .page6 .one .one3 .ho:hover p {
+  margin-bottom: 20px;
+}
+.page6 .one .one2 {
+  background: url(../images/picpic2.jpg) center;
+  background-size: cover;
+}
+.page6 .one .one3 {
+  background: url(../images/picpic3.jpg) center;
+  background-size: cover;
+}
+.page6 .two {
+  height: 500px;
+  overflow: hidden;
+}
+.page6 .two .left {
+  width: 65%;
+  height: 100%;
+  position: relative;
+}
+.page6 .two .left .content {
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -400px;
+  text-align: center;
+  padding: 0 50px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.page6 .two .left .content h2 {
+  margin-bottom: 20px;
+}
+.page6 .two .left .content form {
+  margin-top: -20px;
+}
+.page6 .two .left .content form input {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border: 0;
+  background: none;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ccc;
+}
+.page6 .two .left .content form input:focus {
+  outline: 0;
+}
+.page6 .two .left .content form button {
+  outline-width: 0px;
+  border: none;
+  width: 226px;
+  height: 60px;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #50BD0D;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 2px 1px 2px 1px #ccc;
+}
+.page6 .two .left .content form button:hover {
+  background-color: #59D60E;
+}
+.page6 .two .right {
+  width: 35%;
+  height: 100%;
+  padding: 50px 60px;
+}
+.page6 .two .right .row {
+  font-size: 18px;
+}
+.page6 .two .right .row li span {
+  margin-bottom: 20px;
+}
+.page6 .three {
+  background-image: url(../images/dot.svg), linear-gradient(-40deg, #46b8cd, #276073 50%, #182e4a);
+  background-size: 3px,auto;
+  height: 150px;
+}
+
+#navbarmain {
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  z-index: 4000;
+  letter-spacing: 2px;
+  padding: 20px;
+  display: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 2px 1px 2px 1px #ccc;
+}
+#navbarmain span {
+  background: url("../images/pic1.png") no-repeat;
+  background-size: 34px 32px;
+  margin-left: 16px;
+  padding-left: 50px;
+  padding-top: 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+#navbarmain span:hover {
+  color: #C4CBC3;
+}
+#navbarmain ul {
+  font-size: 14px;
+  list-style: none;
+  float: right;
+  margin-top: 4px;
+}
+#navbarmain ul li, #navbarmain ul li > a {
+  margin-right: 20px;
+  float: left;
+  cursor: pointer;
+}
+#navbarmain ul li:hover, #navbarmain ul li > a:hover {
+  color: #AAAFA8;
+}
+
+/*# sourceMappingURL=index.css.map */
