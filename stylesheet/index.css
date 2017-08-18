@@ -287,6 +287,41 @@ body {
   overflow: hidden;
   position: relative;
 }
+#page2 #pic .picshow1 {
+  background-image: url(../images/IMG_1399.JPG);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#page2 #pic .picshow2 {
+  background-image: url(../images/IMG_1357.JPG);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#page2 #pic .picshow3 {
+  background-image: url(../images/IMG_1409.JPG);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#page2 #pic .picshow4 {
+  background-image: url(../images/IMG_1408.JPG);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#page2 #pic .picshow5 {
+  background-image: url(../images/IMG_1410.JPG);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 #page2 #text {
   float: left;
   height: 100%;
